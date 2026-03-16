@@ -1488,6 +1488,10 @@ body {
   border: 1px solid rgba(0,0,0,.08);
 }
   
+.project-card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
 
 /*--------------------------------------------------------------
 # Service Details Section
@@ -1552,6 +1556,123 @@ body {
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+
+/* Service Details Enhancements */
+.service-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #149ddd 0%, #0f8ad6 100%);
+  color: white;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(20, 157, 221, 0.25);
+  transition: transform 0.4s ease;
+}
+
+.service-icon:hover { transform: scale(1.08); }
+
+.text-gradient {
+  background: linear-gradient(to right, #149ddd, #0f8ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.detail-card {
+  background: white;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(20,157,221,0.08);
+}
+
+.detail-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #149ddd;
+}
+
+.detail-header h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.deliverable-list li,
+.highlight-list li {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.deliverable-list i { font-size: 1.4rem; }
+
+.text-accent { color: #149ddd; }
+
+.highlight-bullet {
+  display: inline-block;
+  width: 24px;
+  color: #149ddd;
+  font-size: 1.3rem;
+  margin-right: 12px;
+}
+
+.sidebar {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.sidebar-title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: #149ddd;
+  border-radius: 3px;
+}
+
+.service-links a {
+  display: block;
+  padding: 14px 0;
+  color: #444;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.service-links a:hover {
+  color: #149ddd;
+  padding-left: 12px;
+  text-decoration: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .sidebar { position: static; margin-top: 2rem; }
 }
 
 /*--------------------------------------------------------------
