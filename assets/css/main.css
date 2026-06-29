@@ -871,6 +871,56 @@ section,
   color: #0056b3;
 }
 
+/*--------------------------------------------------------------
+New projects tab
+----------------------------------------------------------------------*/
+.nav-tabs {
+  border-bottom: 2px solid #e5e7eb;
+}
+        
+.nav-tabs .nav-link {
+  color: #6b7280;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+}
+        
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    border-bottom: 3px solid #0d6efd;
+    background: transparent;
+}
+        
+.project-card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.project-thumb {
+    height: 180px;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: #94a3b8;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.badge-tech {
+    background-color: #f8fafc;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    font-size: 0.8rem;
+}
+
 /*------------------------------------------------------------
 # MySkills Section
 ----------------------------------------------------------------*/
