@@ -1341,6 +1341,15 @@ body {
     line-height: 1.5;
 }
 
+/* Gap between Research tiles */
+.research-card {
+  margin-bottom: 2rem; /* 32px – adjust as you like */
+}
+
+/* Optional: remove margin from the last card so it doesn’t create extra space at the bottom */
+.research-card:last-child {
+  margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Awards Section
 --------------------------------------------------------------*/
